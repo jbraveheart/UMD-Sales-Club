@@ -1,8 +1,8 @@
 /* Custom Styles for UMD Sales Club (Tailwind CSS will handle most utilities) */
 
 :root {
-    --umd-maroon: #810541;
-    --umd-gold: #FFCC33;
+    --umd-maroon: #821E32;
+    --umd-gold: #F0BE3C;
 }
 
 body {
@@ -61,3 +61,5 @@ h6,
     opacity: 1;
     pointer-events: auto;
 }
+
+img
