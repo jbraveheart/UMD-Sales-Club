@@ -1,0 +1,65 @@
+/* Custom Styles for UMD Sales Club (Tailwind CSS will handle most utilities) */
+
+:root {
+    --umd-maroon: #821E32;
+    --umd-gold: #F0BE3C;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-umd-maroon {
+    background-color: var(--umd-maroon);
+}
+
+.text-umd-maroon {
+    color: var(--umd-maroon);
+}
+
+.bg-umd-gold {
+    background-color: var(--umd-gold);
+}
+
+.border-umd-gold {
+    border-color: var(--umd-gold);
+}
+
+/* Additional Hover utilities for convenience */
+.hover\:bg-umd-maroon:hover {
+    background-color: var(--umd-maroon);
+}
+
+.hover\:text-umd-maroon:hover {
+    color: var(--umd-maroon);
+}
+
+/* Mobile Menu hidden state */
+#mobileMenu {
+    transition: all 0.3s ease;
+}
+
+.mobile-hidden {
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+img

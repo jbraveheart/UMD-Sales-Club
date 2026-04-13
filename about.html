@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMD SALES Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#FAF5E9",
+                        "background": "#FAF5E9",
+                        "on-surface": "#3D0B15",
+                        "on-surface-variant": "#821E32",
+                        "surface-dim": "#F0E5D1",
+                        "surface-container": "#F0E5D1",
+                        "surface-container-lowest": "#FFFDF8",
+                        "surface-container-highest": "#EAD8BD",
+                        "surface-container-low": "#F5ECD8",
+                        "primary": "#821E32",
+                        "on-primary": "#F0BE3C",
+                        "primary-container": "#4D111D",
+                        "on-primary-container": "#F0BE3C",
+                        "secondary": "#F0BE3C",
+                        "on-secondary": "#3D0B15",
+                        "secondary-container": "#FBEACA",
+                        "on-secondary-container": "#821E32",
+                        "outline": "#C9B69B",
+                        "outline-variant": "#E0CEB6"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans", "Montserrat", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -13,16 +48,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 
-<body class="bg-white text-slate-900 font-['Inter']">
+<body class="bg-surface text-on-surface font-body">
 
     <!-- Navigation -->
     <nav
-        class="fixed w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300 shadow-sm">
-        <a href="index.html" class="nav-brand font-900 text-2xl tracking-tighter uppercase text-slate-900">
+        class="fixed w-full z-50 bg-primary-container/80 backdrop-blur-xl border-b border-outline py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300 shadow-sm">
+        <a href="index.html" class="nav-brand font-900 text-2xl tracking-tighter uppercase text-on-primary">
             UMD <span class="text-umd-maroon">Sales Club</span>
         </a>
 
-        <div class="flex flex-wrap gap-4 md:space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
+        <div
+            class="flex flex-wrap gap-4 md:space-x-8 font-bold text-xs uppercase tracking-widest text-on-surface-variant">
             <a href="index.html" class="hover:text-umd-maroon transition">Home</a>
             <a href="leaders.html" class="text-umd-maroon transition">Leadership</a>
             <a href="sponsors.html" class="hover:text-umd-maroon transition">Partners</a>
@@ -31,108 +67,73 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobileMenu"
-        class="mobile-hidden fixed top-[69px] left-0 w-full h-screen bg-white/95 backdrop-blur-md z-40 flex flex-col items-center pt-12 space-y-8 font-bold text-lg uppercase tracking-widest text-slate-800 md:hidden">
+        class="mobile-hidden fixed top-[69px] left-0 w-full h-screen bg-surface-container-highest/95 backdrop-blur-md z-40 flex flex-col items-center pt-12 space-y-8 font-bold text-lg uppercase tracking-widest text-on-primary md:hidden">
         <a href="index.html" class="hover:text-umd-maroon">Home</a>
         <a href="leaders.html" class="text-umd-maroon transition">Leadership</a>
         <a href="sponsors.html" class="hover:text-umd-maroon">Partners</a>
     </div>
 
     <!-- Page Header -->
-    <section class="pt-32 pb-16 px-6 bg-slate-50 relative overflow-hidden">
+    <section class="pt-32 pb-16 px-6 bg-surface-container-low relative overflow-hidden">
         <!-- Decoration -->
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-umd-gold opacity-10 rounded-full blur-[80px]"></div>
 
         <div class="max-w-7xl mx-auto align-center">
-            <h1 class="text-5xl md:text-7xl font-900 uppercase tracking-tighter text-slate-900"><span
+            <h1 class="text-5xl md:text-7xl font-900 uppercase tracking-tighter text-on-primary"><span
                     class="text-umd-maroon">About Us</span></h1>
-            <p class="mt-6 text-xl text-slate-600 max-w-2xl font-light">
+            <p class="mt-6 text-xl text-on-surface-variant max-w-2xl font-light">
                 We are a competitive, high-performance agency operating out of the Labovitz School of Business and
                 Economics. Our mission is to transform students into revenue-generating sales professionals.
             </p>
         </div>
     </section>
 
-    <!-- Social Hub -->
-    <section class="py-12 px-6 bg-white border-y border-slate-100">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <h3 class="text-lg font-bold uppercase tracking-widest text-slate-400">Where to find us</h3>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full md:w-auto">
-                <a href="https://www.linkedin.com/company/university-of-minnesota-duluth-professional-sales/posts/?feedView=all"
-                    target="_blank"
-                    class="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#0077b5] hover:bg-slate-100 transition group">
-                    <i
-                        class="fa-brands fa-linkedin-in text-[#0077b5] text-xl group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm tracking-wide">LinkedIn</span>
-                </a>
-                <a href="https://www.instagram.com/umdsalesclub/" target="_blank"
-                    class="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#E1306C] hover:bg-slate-100 transition group">
-                    <i
-                        class="fa-brands fa-instagram text-[#E1306C] text-xl group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm tracking-wide">Instagram</span>
-                </a>
-                <a href="https://bulldogconnect.d.umn.edu/" target="_blank"
-                    class="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-umd-gold hover:bg-slate-100 transition group">
-                    <i class="fa-solid fa-paw text-umd-gold text-xl group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm tracking-wide">Bulldog Connect</span>
-                </a>
-                <a href="#"
-                    class="flex items-center gap-3 px-6 py-4 rounded-xl bg-slate-50 border border-slate-100 hover:border-[#1DB954] hover:bg-slate-100 transition group">
-                    <i
-                        class="fa-brands fa-spotify text-[#1DB954] text-xl group-hover:scale-110 transition-transform"></i>
-                    <span class="font-bold text-sm tracking-wide">Listen to our Podcast</span>
-                </a>
-            </div>
-        </div>
-    </section>
 
     <!-- Our Initiatives Section -->
-    <section class="py-24 px-6 bg-slate-50 border-b border-slate-100">
+    <section class="py-24 px-6 bg-surface-container-low border-b border-outline">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-900 uppercase tracking-tight text-slate-900">Our <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-umd-maroon to-red-400">Initiatives</span>
-                </h2>
-                <div class="h-1 w-24 bg-umd-gold mx-auto mt-6 rounded-full"></div>
-                <p class="text-slate-500 mt-4 max-w-2xl mx-auto text-lg">We don't just sit in classrooms. We actively
-                    shape the next generation of sales professionals through hands-on, high-impact programs.</p>
-            </div>
+    
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Initiative 1 -->
                 <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    class="bg-surface p-8 rounded-2xl shadow-sm border border-outline hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
                     <div
                         class="w-14 h-14 bg-umd-maroon/10 text-umd-maroon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-microphone"></i>
                     </div>
-                    <h3 class="text-xl font-bold uppercase mb-3 text-slate-900">Sales Summit Pitch Comp</h3>
-                    <p class="text-slate-600 leading-relaxed font-light">Our flagship regional event. Students pitch a
+                    <h3 class="text-xl font-bold uppercase mb-3 text-on-primary">Sales Summit Pitch Comp</h3>
+                    <p class="text-on-surface-variant leading-relaxed font-light">Our flagship regional event. Students
+                        pitch a
                         complex product to real-world executives for cash prizes, scholarships, and immediate job
                         offers.</p>
                 </div>
 
                 <!-- Initiative 2 -->
                 <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    class="bg-surface p-8 rounded-2xl shadow-sm border border-outline hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
                     <div
                         class="w-14 h-14 bg-umd-maroon/10 text-umd-maroon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-briefcase"></i>
                     </div>
-                    <h3 class="text-xl font-bold uppercase mb-3 text-slate-900">Pro-Bono Consulting</h3>
-                    <p class="text-slate-600 leading-relaxed font-light">We operate as an internal collegiate agency,
+                    <h3 class="text-xl font-bold uppercase mb-3 text-on-primary">Pro-Bono Consulting</h3>
+                    <p class="text-on-surface-variant leading-relaxed font-light">We operate as an internal collegiate
+                        agency,
                         providing go-to-market strategies and lead generation training for our members via practical
                         application.</p>
                 </div>
 
                 <!-- Initiative 3 -->
                 <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
+                    class="bg-surface p-8 rounded-2xl shadow-sm border border-outline hover:shadow-xl hover:-translate-y-1 transition duration-300 group">
                     <div
                         class="w-14 h-14 bg-umd-maroon/10 text-umd-maroon rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-comments"></i>
                     </div>
-                    <h3 class="text-xl font-bold uppercase mb-3 text-slate-900">Live Roleplay Workshops</h3>
-                    <p class="text-slate-600 leading-relaxed font-light">Theory means nothing without practice. We hold
+                    <h3 class="text-xl font-bold uppercase mb-3 text-on-primary">Live Roleplay Workshops</h3>
+                    <p class="text-on-surface-variant leading-relaxed font-light">Theory means nothing without practice.
+                        We hold
                         weekly recorded mock-discovery and negotiation calls with senior members providing immediate
                         feedback.</p>
                 </div>
@@ -141,32 +142,32 @@
     </section>
 
     <!-- Mentorship & Alumni Split Section -->
-    <section class="py-24 px-6 bg-slate-900 text-white">
+    <section class="py-24 px-6 bg-surface-container text-on-primary">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16">
 
             <!-- Mentorship Program -->
             <div class="relative">
                 <div class="flex items-center gap-4 mb-8">
                     <div
-                        class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-umd-gold text-2xl">
+                        class="w-12 h-12 bg-surface/10 rounded-xl flex items-center justify-center text-umd-gold text-2xl">
                         <i class="fa-solid fa-handshake-angle"></i>
                     </div>
                     <h2 class="text-3xl font-900 uppercase">Mentorship Program</h2>
                 </div>
-                <p class="text-slate-400 mb-8 font-light text-lg">
+                <p class="text-on-surface-variant mb-8 font-light text-lg">
                     We don't leave success to chance. Our structured 1-on-1 mentorship program pairs incoming members
                     with senior performers and industry professionals.
                     You'll refine your cold-calling, negotiation, and elevator pitch under the guidance of someone who
                     has already secured top offers.
                 </p>
                 <ul class="space-y-4">
-                    <li class="flex items-center gap-3 text-slate-300"><i
+                    <li class="flex items-center gap-3 text-on-surface-variant"><i
                             class="fa-solid fa-check text-umd-gold border border-umd-gold/30 rounded-full p-1 text-xs"></i>
                         Weekly mock discovery calls.</li>
-                    <li class="flex items-center gap-3 text-slate-300"><i
+                    <li class="flex items-center gap-3 text-on-surface-variant"><i
                             class="fa-solid fa-check text-umd-gold border border-umd-gold/30 rounded-full p-1 text-xs"></i>
                         Resume and LinkedIn optimization.</li>
-                    <li class="flex items-center gap-3 text-slate-300"><i
+                    <li class="flex items-center gap-3 text-on-surface-variant"><i
                             class="fa-solid fa-check text-umd-gold border border-umd-gold/30 rounded-full p-1 text-xs"></i>
                         Direct introductions to hiring managers.</li>
                 </ul>
@@ -176,12 +177,12 @@
             <div class="relative">
                 <div class="flex items-center gap-4 mb-8">
                     <div
-                        class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-umd-maroon text-2xl">
+                        class="w-12 h-12 bg-surface/10 rounded-xl flex items-center justify-center text-umd-maroon text-2xl">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
                     <h2 class="text-3xl font-900 uppercase">Alumni Success</h2>
                 </div>
-                <p class="text-slate-400 mb-8 font-light text-lg">
+                <p class="text-on-surface-variant mb-8 font-light text-lg">
                     Our alumni are crushing quotas at top Fortune 500 tech companies, medical device firms, and
                     logistics giants. See where our elite talent lands after graduation.
                 </p>
@@ -189,21 +190,22 @@
                 <!-- Alumni Highlight Cards -->
                 <div class="space-y-4">
                     <div
-                        class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-pointer group">
+                        class="flex items-center gap-4 p-4 rounded-2xl bg-surface/5 border border-outline hover:bg-surface/10 transition cursor-pointer group">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80"
-                            class="w-16 h-16 rounded-full object-cover">
+                            class="w-16 h-16 rounded-full object-cover transition-transform duration-300 group-hover:scale-110">
                         <div>
-                            <h4 class="font-bold text-white group-hover:text-umd-gold transition">Jessica Roland</h4>
-                            <p class="text-sm text-slate-400">Account Executive @ Salesforce</p>
+                            <h4 class="font-bold text-on-primary group-hover:text-umd-gold transition">Jessica Roland
+                            </h4>
+                            <p class="text-sm text-on-surface-variant">Account Executive @ Salesforce</p>
                         </div>
                     </div>
                     <div
-                        class="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition cursor-pointer group">
+                        class="flex items-center gap-4 p-4 rounded-2xl bg-surface/5 border border-outline hover:bg-surface/10 transition cursor-pointer group">
                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80"
-                            class="w-16 h-16 rounded-full object-cover filter grayscale group-hover:grayscale-0 transition">
+                            class="w-16 h-16 rounded-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300">
                         <div>
-                            <h4 class="font-bold text-white group-hover:text-umd-gold transition">David Chen</h4>
-                            <p class="text-sm text-slate-400">Regional Sales Manager @ Stryker</p>
+                            <h4 class="font-bold text-on-primary group-hover:text-umd-gold transition">David Chen</h4>
+                            <p class="text-sm text-on-surface-variant">Regional Sales Manager @ Stryker</p>
                         </div>
                     </div>
                 </div>
@@ -213,34 +215,34 @@
     </section>
 
     <!-- Footer -->
-    <footer class="pt-20 pb-10 px-6 bg-slate-950 text-slate-400 border-t border-white/5">
+    <footer class="pt-20 pb-10 px-6 bg-primary-container text-on-surface-variant border-t border-outline-variant">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center border-b border-slate-800 pb-10 mb-10">
-                <div class="nav-brand font-900 text-3xl tracking-tighter text-white mb-6 md:mb-0">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-outline pb-10 mb-10">
+                <div class="nav-brand font-900 text-3xl tracking-tighter text-on-primary mb-6 md:mb-0">
                     UMD<span class="text-umd-maroon">SALES.</span>
                 </div>
                 <div class="flex space-x-4">
                     <a href="https://www.linkedin.com/company/university-of-minnesota-duluth-professional-sales/posts/?feedView=all"
                         target="_blank"
-                        class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-umd-maroon hover:text-white transition"><i
+                        class="w-10 h-10 rounded-full bg-surface-container border border-outline flex items-center justify-center hover:bg-umd-maroon hover:text-on-primary transition"><i
                             class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/umdsalesclub/" target="_blank"
-                        class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-umd-maroon hover:text-white transition"><i
+                        class="w-10 h-10 rounded-full bg-surface-container border border-outline flex items-center justify-center hover:bg-umd-maroon hover:text-on-primary transition"><i
                             class="fa-brands fa-instagram"></i></a>
                     <a href="#"
-                        class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-[#1DB954] hover:text-white transition"><i
+                        class="w-10 h-10 rounded-full bg-surface-container border border-outline flex items-center justify-center hover:bg-[#1DB954] hover:text-on-primary transition"><i
                             class="fa-brands fa-spotify"></i></a>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center text-sm font-medium">
                 <p>&copy;
-                    <script>document.write(new Date().getFullYear())</script> UMD Sales Agency. Labovitz School of
+                    <script>document.write(new Date().getFullYear())</script> UMD Sales. Labovitz School of
                     Business.
                 </p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-white transition">Privacy</a>
-                    <a href="#" class="hover:text-white transition">Terms</a>
-                    <a href="#" class="hover:text-white transition">Contact</a>
+                    <a href="#" class="hover:text-on-primary transition">Privacy</a>
+                    <a href="#" class="hover:text-on-primary transition">Terms</a>
+                    <a href="#" class="hover:text-on-primary transition">Contact</a>
                 </div>
             </div>
         </div>
