@@ -62,18 +62,7 @@ h6,
     pointer-events: auto;
 }
 
-img
-/* Custom Styles for UMD Sales Club (Tailwind CSS will handle most utilities) */
 
-:root {
-    --umd-maroon: #821E32;
-    --umd-gold: #F0BE3C;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-}
 
 .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
