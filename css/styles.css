@@ -63,3 +63,208 @@ h6,
 }
 
 img
+/* Custom Styles for UMD Sales Club (Tailwind CSS will handle most utilities) */
+
+:root {
+    --umd-maroon: #821E32;
+    --umd-gold: #F0BE3C;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, #51000d 0%, #7a0019 100%);
+        }
+
+        .glass-nav {
+            background: rgba(251, 249, 248, 0.9);
+            backdrop-filter: blur(20px);
+        }
+
+        .corporate-border {
+            border-left: 4px solid #51000d;
+        }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-umd-maroon {
+    background-color: var(--umd-maroon);
+}
+
+.text-umd-maroon {
+    color: var(--umd-maroon);
+}
+
+.bg-umd-gold {
+    background-color: var(--umd-gold);
+}
+
+.border-umd-gold {
+    border-color: var(--umd-gold);
+}
+
+/* Additional Hover utilities for convenience */
+.hover\:bg-umd-maroon:hover {
+    background-color: var(--umd-maroon);
+}
+
+.hover\:text-umd-maroon:hover {
+    color: var(--umd-maroon);
+}
+
+/* Mobile Menu hidden state */
+#mobileMenu {
+    transition: all 0.3s ease;
+}
+
+.mobile-hidden {
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobile-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Card Components */
+.benefit-card {
+    background-color: #FAF5E9; /* surface */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: translateY(-0.25rem);
+}
+
+.benefit-card-icon {
+    color: #821E32; /* primary */
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover .benefit-card-icon {
+    transform: scale(1.1);
+}
+
+.benefit-card-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #821E32; /* primary */
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(250, 245, 233, 0.5); /* surface transparent */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #C9B69B; /* outline */
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    background-color: #FAF5E9; /* surface */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+    transform: translateY(-0.25rem);
+}
+
+/* Bottom Navigation Links */
+.bottom-links-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Extracted Component Styles */
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to right, #51000d 0%, #7a0019 100%);
+        }
+
+        .glass-nav {
+            background: rgba(251, 249, 248, 0.9);
+            backdrop-filter: blur(20px);
+        }
+
+        .corporate-border {
+            border-left: 4px solid #51000d;
+        }
+
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 32px 0 rgba(27, 28, 28, 0.06);
+        }
+
+.material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      .glass-nav {
+        background: rgba(251, 249, 248, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+      @media (max-width: 768px) {
+        .asymmetric-grid {
+          grid-template-columns: 1fr;
+        }
+      }
