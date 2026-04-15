@@ -8,66 +8,51 @@
     <title>University Of Minnesota Duluth Sales Club</title>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Work+Sans:wght@600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Work+Sans:wght@600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.16?plugins=forms@0.5.10,container-queries@0.1.1"></script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "surface": "#FAF5E9",
-                        "background": "#FAF5E9",
-                        "on-surface": "#3D0B15",
-                        "on-surface-variant": "#821E32",
-                        "surface-dim": "#F0E5D1",
-                        "surface-container": "#F0E5D1",
-                        "surface-container-lowest": "#FFFDF8",
-                        "surface-container-highest": "#EAD8BD",
-                        "surface-container-low": "#F5ECD8",
-                        "primary": "#821E32",
-                        "on-primary": "#F0BE3C",
-                        "primary-container": "#4D111D",
-                        "on-primary-container": "#F0BE3C",
-                        "secondary": "#F0BE3C",
-                        "on-secondary": "#3D0B15",
-                        "secondary-container": "#FBEACA",
-                        "on-secondary-container": "#821E32",
-                        "outline": "#C9B69B",
-                        "outline-variant": "#E0CEB6"
+                        "surface": "#FCFAF8",
+                        "on-surface-variant": "#5C4D4D",
+                        "background": "#FCFAF8",
+                        "on-surface": "#2A2121",
+                        "surface-dim": "#EBE3E0",
+                        "surface-container": "#F4EBE8",
+                        "primary-container": "#8C001C",
+                        "on-primary": "#FFFFFF",
+                        "surface-container-lowest": "#FFFFFF",
+                        "surface-container-highest": "#E3D5D2",
+                        "surface-container-low": "#F9F3F1",
+                        "outline": "#C2B2B2",
+                        "primary": "#51000D",
+                        "outline-variant": "#E8DBDB",
+                        "secondary": "#C69214",
+                        "on-secondary": "#FFFFFF",
+                        "secondary-fixed": "#FFE18F",
+                        "secondary-fixed-dim": "#E5B02E",
+                        "secondary-container": "#FBE6AB",
+                        "on-secondary-container": "#4A3500",
+                        "surface-variant": "#E3D5D2",
+                        "on-secondary-fixed": "#2B1E00",
+                        "on-secondary-fixed-variant": "#4E3700",
+                        "inverse-surface": "#3D3131",
+                        "inverse-on-surface": "#FCFAF8"
                     },
                     "fontFamily": {
-                        "headline": ["Work Sans", "Montserrat", "sans-serif"],
-                        "body": ["Inter", "sans-serif"],
+                        "headline": ["Montserrat","Inter","sans-serif"],
+                        "body": ["Inter", "system-ui","sans-serif"],
                         "label": ["Inter", "sans-serif"]
                     }
                 }
             }
         }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(to right, #51000d 0%, #7a0019 100%);
-        }
-
-        .glass-nav {
-            background: rgba(251, 249, 248, 0.9);
-            backdrop-filter: blur(20px);
-        }
-
-        .corporate-border {
-            border-left: 4px solid #51000d;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
@@ -87,8 +72,8 @@
                     href="sponsors.html">Sponsors</a>
             </div>
             <a class="bg-primary text-on-primary px-7 py-3 font-label font-bold uppercase tracking-widest text-[11px] hover:bg-primary-container transition-all"
-                href="https://bulldogconnect.d.umn.edu">
-                Join Membership
+                href="https://duluthumn.campusgroups.com/sales/home/">
+                Become a Member!
             </a>
         </div>
     </nav>
@@ -104,20 +89,19 @@
                     </div>
                     <h1
                         class="font-headline text-5xl md:text-[84px] font-black text-primary leading-[0.95] tracking-tighter mb-8">
-                        High Stakes.<br />Professional <span class="italic font-light">Performance.</span>
+                        Keeping Bulldogs Ahead<br />
                     </h1>
                     <p class="text-lg md:text-xl text-on-surface-variant max-w-md mb-12 leading-relaxed font-light">
-                        Transforming academic potential into elite corporate talent. We are the premier networking arena
-                        for the next generation of sales leaders.
+                        A place where current and former UMD Sales Club members can grow beyond the classroom.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-5">
                         <a class="bg-primary text-on-primary px-10 py-5 font-label font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all text-center"
-                            href="https://bulldogconnect.d.umn.edu">
-                            Bulldog Connect RSVP
+                            href="https://duluthumn.campusgroups.com/sales/home/">
+                            Join the club using Bulldog Connect
                         </a>
                         <a class="px-10 py-5 font-label font-bold uppercase tracking-widest text-xs border border-outline text-primary hover:bg-surface-container-low transition-all text-center"
                             href="#events">
-                            Strategic Calendar
+                            Event Calendar
                         </a>
                     </div>
                 </div>
@@ -163,7 +147,7 @@
                                 class="text-on-primary group-hover:text-primary font-label font-bold text-[10px] uppercase tracking-[.2em] transition-colors">Instagram</span>
                         </a>
                         <a class="group bg-secondary/10 border border-outline p-8 flex flex-col items-center justify-center hover:bg-surface transition-all duration-300"
-                            href="https://bulldogconnect.d.umn.edu">
+                            href="https://duluthumn.campusgroups.com/sales/home/">
                             <span
                                 class="material-symbols-outlined text-secondary text-3xl mb-4 transition-colors">hub</span>
                             <span
@@ -181,6 +165,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Engagements & Recruitment -->
         <section class="py-32 px-6 md:px-12 bg-surface" id="events">
             <div class="max-w-7xl mx-auto">
@@ -189,35 +174,58 @@
                     <div class="lg:col-span-7">
                         <div class="flex items-end justify-between mb-16 border-b border-outline-variant/30 pb-6">
                             <h2 class="font-headline text-4xl font-black text-primary tracking-tighter uppercase">
-                                Upcoming<br />Engagements</h2>
-                            <a class="text-[11px] font-bold uppercase tracking-widest text-secondary hover:text-primary transition-colors flex items-center gap-2"
-                                href="#">
-                                Full Calendar <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
+                                Upcoming<br />Events</h2>
                         </div>
                         <div class="space-y-12">
                             <!-- Event Item -->
                             <div class="group flex gap-8">
                                 <div class="flex-shrink-0 text-center">
-                                    <span class="block text-3xl font-black text-primary leading-none">15</span>
+                                    <span class="block text-3xl font-black text-primary leading-none">14</span>
                                     <span
-                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Oct
-                                        2024</span>
+                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">APR
+                                        2026</span>
                                 </div>
                                 <div class="flex-grow pt-1">
                                     <span
-                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">Professional
-                                        Development</span>
+                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">Sales
+                                        Club Meeting</span>
                                     <h3
                                         class="font-headline text-xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">
-                                        Elevator Pitch Workshop</h3>
+                                        Fun Games, FREE FOOD, NEW SKILLS</h3>
                                     <div
                                         class="flex items-center gap-6 text-[12px] text-on-surface-variant font-medium uppercase tracking-widest">
                                         <span class="flex items-center gap-2"><span
-                                                class="material-symbols-outlined text-base">schedule</span> 17:00</span>
+                                                class="material-symbols-outlined text-base">schedule</span> Tuesdays 5 -
+                                            6 PM</span>
                                         <span class="flex items-center gap-2"><span
                                                 class="material-symbols-outlined text-base">location_on</span> LSBE
-                                            235</span>
+                                            125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Event Item -->
+                            <div class="group flex gap-8">
+                                <div class="flex-shrink-0 text-center">
+                                    <span class="block text-3xl font-black text-primary leading-none">21</span>
+                                    <span
+                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">APR
+                                        2026</span>
+                                </div>
+                                <div class="flex-grow pt-1">
+                                    <span
+                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">By:
+                                        Sales Club</span>
+                                    <h3
+                                        class="font-headline text-xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">
+                                        Tech Sales Panel</h3>
+                                    <div
+                                        class="flex items-center gap-6 text-[12px] text-on-surface-variant font-medium uppercase tracking-widest">
+                                        <span class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-base">schedule</span> 5:00 PM -
+                                            6:00 PM</span>
+                                        <span class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-base">location_on</span> Private
+                                            Location <i>(sign in to display)</i></span>
                                     </div>
                                 </div>
                             </div>
@@ -226,49 +234,24 @@
                                 <div class="flex-shrink-0 text-center">
                                     <span class="block text-3xl font-black text-primary leading-none">28</span>
                                     <span
-                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Oct
-                                        2024</span>
+                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">APR
+                                        2026</span>
                                 </div>
                                 <div class="flex-grow pt-1">
                                     <span
-                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">Executive
-                                        Series</span>
+                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">Sales
+                                        Club Meeting</span>
                                     <h3
                                         class="font-headline text-xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">
-                                        UMD Regional Sales Summit</h3>
+                                        Fun Games, FREE FOOD, NEW SKILLS</h3>
                                     <div
                                         class="flex items-center gap-6 text-[12px] text-on-surface-variant font-medium uppercase tracking-widest">
                                         <span class="flex items-center gap-2"><span
-                                                class="material-symbols-outlined text-base">schedule</span> 09:00 -
-                                            16:00</span>
+                                                class="material-symbols-outlined text-base">schedule</span> Tuesdays 5 -
+                                            6 PM</span>
                                         <span class="flex items-center gap-2"><span
-                                                class="material-symbols-outlined text-base">location_on</span> Kirby
-                                            Ballroom</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Event Item -->
-                            <div class="group flex gap-8">
-                                <div class="flex-shrink-0 text-center">
-                                    <span class="block text-3xl font-black text-primary leading-none">04</span>
-                                    <span
-                                        class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Nov
-                                        2024</span>
-                                </div>
-                                <div class="flex-grow pt-1">
-                                    <span
-                                        class="text-[10px] font-bold uppercase tracking-[0.2em] text-secondary mb-2 block">Industry
-                                        Insights</span>
-                                    <h3
-                                        class="font-headline text-xl font-bold text-on-surface mb-3 group-hover:text-primary transition-colors">
-                                        Fortune 500 Recruiter Seminar</h3>
-                                    <div
-                                        class="flex items-center gap-6 text-[12px] text-on-surface-variant font-medium uppercase tracking-widest">
-                                        <span class="flex items-center gap-2"><span
-                                                class="material-symbols-outlined text-base">schedule</span> 18:30</span>
-                                        <span class="flex items-center gap-2"><span
-                                                class="material-symbols-outlined text-base">location_on</span> Zoom
-                                            Hybrid</span>
+                                                class="material-symbols-outlined text-base">location_on</span> LSBE
+                                            125</span>
                                     </div>
                                 </div>
                             </div>
@@ -281,32 +264,33 @@
                             </h2>
                             <p
                                 class="text-on-surface-variant font-light mb-10 leading-relaxed italic border-l-2 border-secondary pl-6">
-                                "Our mission is to cultivate high-performance talent through disciplined practice and
-                                industry networking."</p>
+                                "The Sales Club is a club designed to give students of any major a leg up on gaining real-world knowledge and career opportunities in sales. ."</p>
                             <div class="space-y-8 mb-12">
                                 <div class="flex items-start gap-6">
                                     <span class="material-symbols-outlined text-primary">event_repeat</span>
                                     <div>
                                         <p class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">
                                             Standard Session</p>
-                                        <p class="font-bold text-lg">Every Other Tuesday @ 17:30</p>
+                                        <p class="font-bold text-lg">Every Tuesday @ 5 - 6 PM </p>
                                     </div>
                                 </div>
                                 <div class="flex items-start gap-6">
                                     <span class="material-symbols-outlined text-primary">corporate_fare</span>
                                     <div>
                                         <p class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1">
-                                            HQ Location</p>
-                                        <p class="font-bold text-lg">Labovitz School of Business, R235</p>
+                                             Location</p>
+                                        <p class="font-bold text-lg">Labovitz School of Business, 125</p>
                                     </div>
                                 </div>
                             </div>
                             <a class="block w-full text-center bg-primary text-on-primary py-5 font-bold uppercase tracking-widest text-[11px] hover:bg-primary-container transition-all"
-                                href="https://bulldogconnect.d.umn.edu">
+                                href="https://duluthumn.campusgroups.com/sales/home/">
                                 Formal Application via Bulldog Connect
                             </a>
                         </div>
-
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Featured Video Section -->
         <section class="py-24 px-6 md:px-12 bg-surface border-y border-outline">
@@ -330,24 +314,37 @@
             <div class="max-w-7xl mx-auto">
                 <div
                     class="relative min-h-[500px] flex items-center justify-center text-center p-12 overflow-hidden bg-primary-container group">
-                    <img class="absolute inset-0 w-full h-full object-cover opacity-40 grayscale group-hover:scale-105 transition-transform duration-[3000ms]"
+                    <img class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-[3000ms]"
                         data-alt="Modern business center meeting room with high-end furniture and panoramic city views for a sales summit"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtCzc5z_pPVu3y2ec6C3F9YgDpczU4vdQ0pPwVvMr5TjiafKtkv7K1AJCsvSo1NCdNwjw2RsxzyFNOp_sU98OMKTeZIT_ODTjoypueo2x7oRC6LOhGkrEfKj09XEfjw3GLg_N8FFFtvxd2OdqqQ6SizRQnTALBg7mxLue3I0R4XScFMVLDucF7kQDUab0Fp8Cah4MaBjOCzkO1RXyQYHgybA8i6WkgaZOayj2h20mrRpSP5Tj7Sl98dOK2MVWNxtsXLXmB1H8boeMQ" />
+                        src="images/IMG_1669.JPG" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
                     <div class="relative z-10 max-w-3xl">
-                        <span
-                            class="text-secondary font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">Executive
-                            Summons</span>
-                        <h2 class="font-headline text-4xl md:text-6xl font-black mb-8 tracking-tighter text-on-primary">
-                            The 2024 UMD Sales Summit</h2>
+                        
+                        <h2 class="font-headline text-4xl md:text-6xl font-bold mb-8 tracking-tight text-[#C69214] drop-shadow-lg">
+                            UMD Sales Summit
+                        </h2>
                         <p class="text-on-primary/70 max-w-xl mx-auto text-lg mb-12 font-light">
-                            20+ Corporate Sponsors. 100+ Elite Candidates. One Premier Arena.
+                            Designed to be a catalyst for growth and transformation.
                         </p>
-                        <button
-                            class="bg-surface text-primary px-12 py-5 font-label font-bold uppercase tracking-widest text-xs hover:bg-secondary-container transition-all">
-                            Executive Summary &amp; Registration
-                        </button>
+                        <a href="https://lsbesalessummit.com" target="_blank" 
+   class="inline-flex items-center justify-center gap-3 bg-[#51000D] text-white px-10 py-5 font-label font-bold uppercase tracking-widest text-xs hover:bg-black transition-colors shadow-lg">
+    Enter the Summit Portal <span class="text-lg leading-none" aria-hidden="true">&rarr;</span>
+</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Site Navigation Links -->
+        <section class="bottom-links-section">
+            <div class="flex flex-col sm:flex-row gap-5 justify-center mt-8 mb-12">
+                <a class="bg-primary text-on-primary px-10 py-5 font-label font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all text-center"
+                    href="about.html">
+                    About US
+                </a>
+                <a class="bg-primary text-on-primary px-10 py-5 font-label font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all text-center"
+                    href="sponsors.html">
+                    Sponsors
+                </a>
             </div>
         </section>
     </main>
@@ -365,14 +362,9 @@
                     </p>
 
                 </div>
-                <div class="flex flex-wrap gap-x-12 gap-y-6 font-label text-[11px] font-bold uppercase tracking-widest">
-                    <a class="text-on-surface/60 hover:text-primary transition-colors" href="#">Contact Bureau</a>
-                    <a class="text-on-surface/60 hover:text-primary transition-colors" href="#">Privacy Protocol</a>
-                    <a class="text-on-surface/60 hover:text-primary transition-colors" href="#">Terms of Engagement</a>
-                </div>
-            </div>
-        </div>
+               
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

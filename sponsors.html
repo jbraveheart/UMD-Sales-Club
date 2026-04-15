@@ -1,91 +1,80 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Corporate Partners | The Academic Edge</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-    tailwind.config = {
-        darkMode: "class",
-        theme: {
-            extend: {
-                "colors": {
-                    "surface": "#FAF5E9",
-                    "background": "#FAF5E9",
-                    "on-surface": "#3D0B15",
-                    "on-surface-variant": "#821E32",
-                    "surface-dim": "#F0E5D1",
-                    "surface-container": "#F0E5D1",
-                    "surface-container-lowest": "#FFFDF8",
-                    "surface-container-highest": "#EAD8BD",
-                    "surface-container-low": "#F5ECD8",
-                    "primary": "#821E32",
-                    "on-primary": "#F0BE3C",
-                    "primary-container": "#4D111D",
-                    "on-primary-container": "#F0BE3C",
-                    "secondary": "#F0BE3C",
-                    "on-secondary": "#3D0B15",
-                    "secondary-container": "#FBEACA",
-                    "on-secondary-container": "#821E32",
-                    "outline": "#C9B69B",
-                    "outline-variant": "#E0CEB6"
-                },
-                "fontFamily": {
-                    "headline": ["Work Sans", "Montserrat", "sans-serif"],
-                    "body": ["Inter", "sans-serif"],
-                    "label": ["Inter", "sans-serif"]
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Corporate Partners | The Academic Edge</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Work+Sans:wght@600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com/3.4.16?plugins=forms@0.5.10,container-queries@0.1.1"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#FCFAF8",
+                        "on-surface-variant": "#5C4D4D",
+                        "background": "#FCFAF8",
+                        "on-surface": "#2A2121",
+                        "surface-dim": "#EBE3E0",
+                        "surface-container": "#F4EBE8",
+                        "primary-container": "#8C001C",
+                        "on-primary": "#FFFFFF",
+                        "surface-container-lowest": "#FFFFFF",
+                        "surface-container-highest": "#E3D5D2",
+                        "surface-container-low": "#F9F3F1",
+                        "outline": "#C2B2B2",
+                        "primary": "#51000D",
+                        "outline-variant": "#E8DBDB",
+                        "secondary": "#C69214",
+                        "on-secondary": "#FFFFFF",
+                        "secondary-fixed": "#FFE18F",
+                        "secondary-fixed-dim": "#E5B02E",
+                        "secondary-container": "#FBE6AB",
+                        "on-secondary-container": "#4A3500",
+                        "surface-variant": "#E3D5D2",
+                        "on-secondary-fixed": "#2B1E00",
+                        "on-secondary-fixed-variant": "#4E3700",
+                        "inverse-surface": "#3D3131",
+                        "inverse-on-surface": "#FCFAF8"
+                    },
+                    "fontFamily": {
+                        "headline": ["Montserrat","Inter","sans-serif"],
+                        "body": ["Inter", "system-ui","sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
                 }
             }
         }
-    }
-</script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        display: inline-block;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        direction: ltr;
-      }
-      .glass-nav {
-        background: rgba(251, 249, 248, 0.8);
-        backdrop-filter: blur(20px);
-      }
-      .asymmetric-grid {
-        display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
-      }
-      @media (max-width: 768px) {
-        .asymmetric-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    </script>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fbf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md shadow-[0_8px_32px_0_rgba(27,28,28,0.06)] transition-colors duration-300">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-black uppercase tracking-tighter text-[#51000d] dark:text-[#fbf9f8] font-headline">
-                UMD Sales Club
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20 transition-all duration-300">
+        <div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-7xl mx-auto">
+            <div class="text-xl font-black uppercase tracking-tight text-primary">
+                University of Minnesota Duluth <span class="text-secondary">SalesClub</span>
             </div>
-<div class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight">
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="#">Home</a>
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="#">About Us</a>
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="#">Leaders</a>
-<a class="text-[#51000d] dark:text-[#f4e07a] border-b-2 border-[#51000d] dark:border-[#f4e07a] pb-1" href="#">Sponsors</a>
-</div>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-lg text-sm font-label font-bold uppercase tracking-widest hover:opacity-90 active:scale-[0.99] transition-all shadow-lg">
-                Join Now
-            </button>
-</div>
-</nav>
+            <div
+                class="hidden md:flex items-center gap-10 font-label font-semibold text-[13px] uppercase tracking-widest">
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200" href="index.html">Home</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200" href="about.html">About</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200"
+                    href="leaders.html">Leadership</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200"
+                    href="sponsors.html">Sponsors</a>
+            </div>
+            <a class="bg-primary text-on-primary px-7 py-3 font-label font-bold uppercase tracking-widest text-[11px] hover:bg-primary-container transition-all"
+                href="https://duluthumn.campusgroups.com/sales/home/">
+                Become a Member!
+            </a>
+        </div>
+    </nav>
 <main class="pt-24">
 <!-- Hero Section -->
 <section class="relative overflow-hidden px-8 py-24 md:py-32">
@@ -114,30 +103,30 @@
 <!-- Gold Partner Slots -->
 <div class="group bg-surface p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
 <div class="h-32 flex items-center justify-center mb-6 w-full grayscale group-hover:grayscale-0 transition-all duration-500">
-<img alt="NorthStar Logistics" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqTAPEFxLi6-gvYDuJj-pMzieZFeZL0dotCH4pO_AlMXEv33cdzSk4xJ3sFVSqCkkWkivKjJC5MlnyNeWA-cnse6bqj1ytVw9DrDlAoFPhcoPvV8Yicw0kBb158nt_3Aeex23wQaGxNyJgjHC5sgIIcB9C0XieF70Pec4SvGfc4aIl0FxDSHTVGL2GNi8DT9GAeS19XcNtJiog5Q16MduPr4_j4whzHvfMbfeMWcsMjQPfACopT39eH6SUMig4J4Io_q-zHgsMea-Z"/>
+<img alt="NorthStar Logistics" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="images/stock_image_9.jpg"/>
 </div>
-<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Graybar</h4>
+<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">NorthStar Logistics</h4>
 <div class="mt-4 w-8 h-1 bg-secondary-fixed opacity-50"></div>
 </div>
 <div class="group bg-surface p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
 <div class="h-32 flex items-center justify-center mb-6 w-full grayscale group-hover:grayscale-0 transition-all duration-500">
-<img alt="Summit Financial" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYVsVQiQDUB5RcdCFd6lexSi18wwnHMbjECxFA8EWH9g9UBEQiWr0dMLyvSgR9OQ66ANd1vi6bGQXJcp-tCYEdvmYzBaXaTkFxk45o9E8vqZ_QvrKd4N0e37C7D3t6lGYPPQU4fVXgD_Wv_lALvAczRBt9ueTDZjea4OidZgNmMONPKypUN4BRjQhywGa7NQLwl35QIIlKO6Po7c4ysUCGMz8zYt1X0RFZ3LqmQMRBKhVtSylpXowjlZ8d86QLfCM6ElhO3X7GWgiZ"/>
+<img alt="Summit Financial" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="images/stock_image_10.jpg"/>
 </div>
-<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Northwestern Mutual</h4>
+<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Summit Financial</h4>
 <div class="mt-4 w-8 h-1 bg-secondary-fixed opacity-50"></div>
 </div>
 <div class="group bg-surface p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
 <div class="h-32 flex items-center justify-center mb-6 w-full grayscale group-hover:grayscale-0 transition-all duration-500">
-<img alt="Apex Enterprises" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUnZnI1NkWJpXdn2gBaorjC6I_xOwkazNktoW8o1P7vjHBoOIvZSMN4Nc4naOMqHJwVCGLln6D2TfwdCiHJg2gARBByKoyQ3KEWgrXDw82mocOBSakpIyTywazqdab9960a1sa34qRkiLJgy_ytuPRR8RaKynLvxUYjp9pO19F_5KijAXNFBxbI9-xw1rTcMzOjZVqm6ojJv6Cy2mPHoTkA9dIl-wUL8rAcCzE4mb6j603PXp7b4H0I_DraFxSlpU6vbdiRlOTmhq_"/>
+<img alt="Apex Enterprises" class="max-h-16 w-auto transition-transform duration-500 group-hover:scale-110" src="images/stock_image_8.jpg"/>
 </div>
-<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Uline</h4>
+<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Apex Enterprises</h4>
 <div class="mt-4 w-8 h-1 bg-secondary-fixed opacity-50"></div>
 </div>
 <div class="group bg-surface p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
 <div class="h-32 flex items-center justify-center mb-6 w-full grayscale group-hover:grayscale-0 transition-all duration-500">
-<span class="material-symbols-outlined text-6xl text-outline-variant"></span>
+<span class="material-symbols-outlined text-6xl text-outline-variant">corporate_fare</span>
 </div>
-<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Fastenal</h4>
+<h4 class="text-xl font-headline font-black uppercase tracking-tight text-primary">Meridian Corp</h4>
 <div class="mt-4 w-8 h-1 bg-secondary-fixed opacity-50"></div>
 </div>
 </div>
@@ -150,55 +139,25 @@
 <h3 class="text-xs font-bold uppercase tracking-[0.4em] text-on-surface-variant mb-4">Official Contributors</h3>
 <h2 class="text-3xl md:text-5xl font-headline font-black text-primary uppercase tracking-tighter">Silver Partners</h2>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-<!-- Silver Partner Slots (12) -->
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">business</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Alpha Systems</span>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<!-- Silver Partner Slots (6) -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="Silver Sponsor 1" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/IMG_9933.jpeg">
 </div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">account_balance</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Beacon Capital</span>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="Silver Sponsor 2" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/IMG_9934.jpeg">
 </div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">rocket_launch</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Core Dynamics</span>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="Silver Sponsor 3" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/IMG_9935.JPG">
 </div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">settings_input_component</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Delta Connect</span>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="Silver Sponsor 4" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/IMG_9941.jpeg">
 </div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">language</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Evolve Tech</span>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="Loffler" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/Loffler.jpeg">
 </div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">analytics</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Focus Insight</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">public</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Global Reach</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">architecture</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Horizon Labs</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">hub</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Infinite Solutions</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">verified</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Joint Venture</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">security</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Kinetic Guard</span>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/5 flex flex-col items-center justify-center text-center hover:bg-surface-container-high transition-colors">
-<span class="material-symbols-outlined text-3xl mb-3 text-on-surface-variant/40">terminal</span>
-<span class="text-sm font-bold uppercase tracking-widest text-primary">Logic Bridge</span>
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 flex flex-col items-center justify-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-32 md:h-40">
+<img alt="SPS" class="max-h-full max-w-full object-contain mix-blend-multiply" src="Silver%20Sponsor%20logos/SPS.jpeg">
 </div>
 </div>
 </div>
@@ -270,19 +229,18 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full border-t border-[#e0bfbe]/15 bg-[#f6f3f2] dark:bg-[#1b1c1c] transition-colors">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full max-w-7xl mx-auto">
-<div class="flex flex-col items-center md:items-start">
-<div class="text-lg font-bold text-[#51000d] dark:text-[#fbf9f8] font-headline mb-4">The Academic Edge</div>
-<p class="text-[#1b1c1c]/60 dark:text-[#fbf9f8]/60 font-['Inter'] text-sm uppercase tracking-widest text-center md:text-left">
-                    © 2024 The Academic Edge. Corporate Varsity Excellence.
-                </p>
-</div>
-<div class="flex gap-12 font-['Inter'] text-sm uppercase tracking-widest">
-<a class="text-[#1b1c1c]/60 dark:text-[#fbf9f8]/60 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-colors" href="#">Contact</a>
-<a class="text-[#1b1c1c]/60 dark:text-[#fbf9f8]/60 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-colors" href="#">Privacy Policy</a>
-<a class="text-[#1b1c1c]/60 dark:text-[#fbf9f8]/60 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-colors" href="#">Terms of Service</a>
-</div>
-</div>
-</footer>
+    <footer class="bg-surface-container-low border-t border-outline-variant/30 py-20 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
+                <div>
+                    <div class="text-xl font-black uppercase tracking-tight text-primary mb-4">
+                        University Of Minnesota DUluth <span class="text-secondary">Sales Club</span>
+                    </div>
+                    <p class="font-label text-[11px] uppercase tracking-[.2em] text-on-surface/40">
+                        © 2026 University of Minnesota Duluth Sales Club. All rights reserved.
+
+                    </p>
+        </div>
+    </footer>
+<script src="js/main.js"></script>
 </body></html>
