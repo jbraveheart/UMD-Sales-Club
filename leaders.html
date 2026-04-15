@@ -53,24 +53,29 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body">
+
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fbf9f8]/80 dark:bg-[#1b1c1c]/80 backdrop-blur-md shadow-[0_8px_32px_0_rgba(27,28,28,0.06)] transition-colors duration-300">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-xl font-black uppercase tracking-tighter text-[#51000d] dark:text-[#fbf9f8] font-headline">
-                Sales Club
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/20 transition-all duration-300">
+        <div class="flex justify-between items-center px-6 md:px-12 py-5 max-w-7xl mx-auto">
+            <div class="text-xl font-black uppercase tracking-tight text-primary">
+                University of Minnesota Duluth <span class="text-secondary">Sales Club</span>
             </div>
-<div class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight">
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="index.html">Home</a>
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="about.html">About Us</a>
-<a class="text-[#51000d] dark:text-[#f4e07a] border-b-2 border-[#51000d] dark:border-[#f4e07a] pb-1" href="leaders.html">Leaders</a>
-<a class="text-[#1b1c1c]/70 dark:text-[#fbf9f8]/70 hover:text-[#51000d] dark:hover:text-[#f4e07a] transition-all duration-200" href="sponsors.html">Sponsors</a>
-</div>
-      <a class="bg-primary text-on-primary px-7 py-3 font-label font-bold uppercase tracking-widest text-[11px] hover:bg-primary-container transition-all"
+            <div
+                class="hidden md:flex items-center gap-10 font-label font-semibold text-[13px] uppercase tracking-widest">
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200" href="index.html">Home</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200" href="about.html">About</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200"
+                    href="leaders.html">Leadership</a>
+                <a class="text-on-surface/60 hover:text-primary transition-all duration-200"
+                    href="sponsors.html">Sponsors</a>
+            </div>
+            <a class="bg-primary text-on-primary px-7 py-3 font-label font-bold uppercase tracking-widest text-[11px] hover:bg-primary-container transition-all"
                 href="https://duluthumn.campusgroups.com/sales/home/">
                 Become a Member!
             </a>
-</div>
-</nav>
+        </div>
+    </nav>
+
 <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
 <!-- Hero Header -->
 <header class="mb-20 text-center md:text-left">
